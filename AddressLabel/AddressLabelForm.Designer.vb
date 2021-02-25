@@ -48,51 +48,64 @@ Partial Class AddressLabelForm
         '
         'FirstNameTextBox
         '
-        Me.FirstNameTextBox.Location = New System.Drawing.Point(35, 58)
+        Me.FirstNameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(35, 73)
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
-        Me.FirstNameTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.FirstNameTextBox.Size = New System.Drawing.Size(150, 23)
         Me.FirstNameTextBox.TabIndex = 0
+        Me.ToolTip1.SetToolTip(Me.FirstNameTextBox, "First Name Input ")
         '
         'LastNameTextBox
         '
-        Me.LastNameTextBox.Location = New System.Drawing.Point(35, 98)
+        Me.LastNameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LastNameTextBox.Location = New System.Drawing.Point(221, 73)
         Me.LastNameTextBox.Name = "LastNameTextBox"
-        Me.LastNameTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.LastNameTextBox.Size = New System.Drawing.Size(150, 23)
         Me.LastNameTextBox.TabIndex = 1
+        Me.ToolTip1.SetToolTip(Me.LastNameTextBox, "Last Name Input")
         '
         'StreetAddressTextBox
         '
-        Me.StreetAddressTextBox.Location = New System.Drawing.Point(35, 148)
+        Me.StreetAddressTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StreetAddressTextBox.Location = New System.Drawing.Point(35, 173)
         Me.StreetAddressTextBox.Name = "StreetAddressTextBox"
-        Me.StreetAddressTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.StreetAddressTextBox.Size = New System.Drawing.Size(150, 23)
         Me.StreetAddressTextBox.TabIndex = 2
+        Me.ToolTip1.SetToolTip(Me.StreetAddressTextBox, "Living Address (House Number and Street)")
         '
         'CityTextBox
         '
-        Me.CityTextBox.Location = New System.Drawing.Point(35, 195)
+        Me.CityTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CityTextBox.Location = New System.Drawing.Point(221, 173)
         Me.CityTextBox.Name = "CityTextBox"
-        Me.CityTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.CityTextBox.Size = New System.Drawing.Size(150, 23)
         Me.CityTextBox.TabIndex = 3
+        Me.ToolTip1.SetToolTip(Me.CityTextBox, "City of residance")
         '
         'StateTextBox
         '
-        Me.StateTextBox.Location = New System.Drawing.Point(35, 243)
+        Me.StateTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.StateTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StateTextBox.Location = New System.Drawing.Point(35, 273)
         Me.StateTextBox.Name = "StateTextBox"
-        Me.StateTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.StateTextBox.Size = New System.Drawing.Size(76, 23)
         Me.StateTextBox.TabIndex = 4
+        Me.ToolTip1.SetToolTip(Me.StateTextBox, "State Code (2 Letters)")
         '
         'ZipTextBox
         '
-        Me.ZipTextBox.Location = New System.Drawing.Point(35, 294)
+        Me.ZipTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ZipTextBox.Location = New System.Drawing.Point(221, 273)
         Me.ZipTextBox.Name = "ZipTextBox"
-        Me.ZipTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.ZipTextBox.Size = New System.Drawing.Size(76, 23)
         Me.ZipTextBox.TabIndex = 5
+        Me.ToolTip1.SetToolTip(Me.ZipTextBox, "Zip Code (6 Digits)")
         '
         'DisplayButton
         '
-        Me.DisplayButton.Location = New System.Drawing.Point(519, 383)
+        Me.DisplayButton.Location = New System.Drawing.Point(437, 385)
         Me.DisplayButton.Name = "DisplayButton"
-        Me.DisplayButton.Size = New System.Drawing.Size(75, 23)
+        Me.DisplayButton.Size = New System.Drawing.Size(110, 50)
         Me.DisplayButton.TabIndex = 6
         Me.DisplayButton.Text = "Display"
         Me.ToolTip1.SetToolTip(Me.DisplayButton, "Button to display Address Label based on Mailing Address inputs")
@@ -100,9 +113,10 @@ Partial Class AddressLabelForm
         '
         'ClearButton
         '
-        Me.ClearButton.Location = New System.Drawing.Point(600, 383)
+        Me.ClearButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.ClearButton.Location = New System.Drawing.Point(553, 385)
         Me.ClearButton.Name = "ClearButton"
-        Me.ClearButton.Size = New System.Drawing.Size(75, 23)
+        Me.ClearButton.Size = New System.Drawing.Size(110, 50)
         Me.ClearButton.TabIndex = 7
         Me.ClearButton.Text = "Clear"
         Me.ToolTip1.SetToolTip(Me.ClearButton, "Clear all input boxes")
@@ -110,9 +124,9 @@ Partial Class AddressLabelForm
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(681, 383)
+        Me.ExitButton.Location = New System.Drawing.Point(670, 385)
         Me.ExitButton.Name = "ExitButton"
-        Me.ExitButton.Size = New System.Drawing.Size(75, 23)
+        Me.ExitButton.Size = New System.Drawing.Size(110, 50)
         Me.ExitButton.TabIndex = 8
         Me.ExitButton.Text = "E&xit"
         Me.ToolTip1.SetToolTip(Me.ExitButton, "Exit the program. (Shortcut: Alt + x)")
@@ -121,54 +135,60 @@ Partial Class AddressLabelForm
         'FirstNameLabel
         '
         Me.FirstNameLabel.AutoSize = True
-        Me.FirstNameLabel.Location = New System.Drawing.Point(35, 39)
+        Me.FirstNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FirstNameLabel.Location = New System.Drawing.Point(35, 53)
         Me.FirstNameLabel.Name = "FirstNameLabel"
-        Me.FirstNameLabel.Size = New System.Drawing.Size(57, 13)
+        Me.FirstNameLabel.Size = New System.Drawing.Size(76, 17)
         Me.FirstNameLabel.TabIndex = 9
         Me.FirstNameLabel.Text = "First Name"
         '
         'LastNameLabel
         '
         Me.LastNameLabel.AutoSize = True
-        Me.LastNameLabel.Location = New System.Drawing.Point(35, 86)
+        Me.LastNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LastNameLabel.Location = New System.Drawing.Point(221, 53)
         Me.LastNameLabel.Name = "LastNameLabel"
-        Me.LastNameLabel.Size = New System.Drawing.Size(58, 13)
+        Me.LastNameLabel.Size = New System.Drawing.Size(76, 17)
         Me.LastNameLabel.TabIndex = 10
         Me.LastNameLabel.Text = "Last Name"
         '
         'StreetAddressLabel
         '
         Me.StreetAddressLabel.AutoSize = True
-        Me.StreetAddressLabel.Location = New System.Drawing.Point(35, 132)
+        Me.StreetAddressLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StreetAddressLabel.Location = New System.Drawing.Point(35, 153)
         Me.StreetAddressLabel.Name = "StreetAddressLabel"
-        Me.StreetAddressLabel.Size = New System.Drawing.Size(76, 13)
+        Me.StreetAddressLabel.Size = New System.Drawing.Size(102, 17)
         Me.StreetAddressLabel.TabIndex = 11
         Me.StreetAddressLabel.Text = "Street Address"
         '
         'CityLabel
         '
         Me.CityLabel.AutoSize = True
-        Me.CityLabel.Location = New System.Drawing.Point(35, 179)
+        Me.CityLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CityLabel.Location = New System.Drawing.Point(221, 153)
         Me.CityLabel.Name = "CityLabel"
-        Me.CityLabel.Size = New System.Drawing.Size(24, 13)
+        Me.CityLabel.Size = New System.Drawing.Size(31, 17)
         Me.CityLabel.TabIndex = 12
         Me.CityLabel.Text = "City"
         '
         'StateLabel
         '
         Me.StateLabel.AutoSize = True
-        Me.StateLabel.Location = New System.Drawing.Point(35, 231)
+        Me.StateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StateLabel.Location = New System.Drawing.Point(35, 253)
         Me.StateLabel.Name = "StateLabel"
-        Me.StateLabel.Size = New System.Drawing.Size(32, 13)
+        Me.StateLabel.Size = New System.Drawing.Size(41, 17)
         Me.StateLabel.TabIndex = 13
         Me.StateLabel.Text = "State"
         '
         'ZipLabel
         '
         Me.ZipLabel.AutoSize = True
-        Me.ZipLabel.Location = New System.Drawing.Point(35, 281)
+        Me.ZipLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ZipLabel.Location = New System.Drawing.Point(221, 253)
         Me.ZipLabel.Name = "ZipLabel"
-        Me.ZipLabel.Size = New System.Drawing.Size(50, 13)
+        Me.ZipLabel.Size = New System.Drawing.Size(65, 17)
         Me.ZipLabel.TabIndex = 14
         Me.ZipLabel.Text = "Zip Code"
         '
@@ -186,36 +206,42 @@ Partial Class AddressLabelForm
         Me.InputGroupBox.Controls.Add(Me.ZipTextBox)
         Me.InputGroupBox.Controls.Add(Me.LastNameLabel)
         Me.InputGroupBox.Controls.Add(Me.FirstNameLabel)
-        Me.InputGroupBox.Location = New System.Drawing.Point(38, 26)
+        Me.InputGroupBox.Location = New System.Drawing.Point(20, 23)
         Me.InputGroupBox.Name = "InputGroupBox"
-        Me.InputGroupBox.Size = New System.Drawing.Size(200, 356)
+        Me.InputGroupBox.Size = New System.Drawing.Size(411, 412)
         Me.InputGroupBox.TabIndex = 1
         Me.InputGroupBox.TabStop = False
         Me.InputGroupBox.Text = "Mailing Address"
+        Me.ToolTip1.SetToolTip(Me.InputGroupBox, "Mailing Address Inputs to configure into an address label")
         '
         'OutputGroupBox
         '
         Me.OutputGroupBox.Controls.Add(Me.DisplayLabel)
-        Me.OutputGroupBox.Location = New System.Drawing.Point(487, 54)
+        Me.OutputGroupBox.Location = New System.Drawing.Point(437, 26)
         Me.OutputGroupBox.Name = "OutputGroupBox"
-        Me.OutputGroupBox.Size = New System.Drawing.Size(200, 187)
+        Me.OutputGroupBox.Size = New System.Drawing.Size(343, 353)
         Me.OutputGroupBox.TabIndex = 16
         Me.OutputGroupBox.TabStop = False
         Me.OutputGroupBox.Text = "Address Label"
+        Me.ToolTip1.SetToolTip(Me.OutputGroupBox, "Address Label based on Inputs")
         '
         'DisplayLabel
         '
         Me.DisplayLabel.AutoSize = True
-        Me.DisplayLabel.Location = New System.Drawing.Point(32, 45)
+        Me.DisplayLabel.Font = New System.Drawing.Font("NI Vision", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DisplayLabel.Location = New System.Drawing.Point(16, 30)
+        Me.DisplayLabel.MaximumSize = New System.Drawing.Size(500, 400)
+        Me.DisplayLabel.MinimumSize = New System.Drawing.Size(300, 200)
         Me.DisplayLabel.Name = "DisplayLabel"
-        Me.DisplayLabel.Size = New System.Drawing.Size(58, 13)
+        Me.DisplayLabel.Size = New System.Drawing.Size(300, 200)
         Me.DisplayLabel.TabIndex = 0
-        Me.DisplayLabel.Text = "Some Text"
         '
         'AddressLabelForm
         '
+        Me.AcceptButton = Me.DisplayButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.ClearButton
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.OutputGroupBox)
         Me.Controls.Add(Me.InputGroupBox)
